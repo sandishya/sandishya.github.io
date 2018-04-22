@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
 
 body {
@@ -44,14 +44,16 @@ h1:before {
 }
 
 @-webkit-keyframes animatebottom {
-  0%{ bottom:-150px; opacity:0 } 
-  50%{ bottom:-100; opacity:0.5 }
+  0%{ bottom:-80px; opacity:0 } 
+  50%{ bottom:-40; opacity:0.2 }
+  75%{ bottom:-20; opacity:0.5 }
   100%{ bottom:0; opacity:1 }
 }
 
 @keyframes animatebottom { 
-  0%{ bottom:-150px; opacity:0 } 
-  50%{ bottom:-100; opacity:0.5 }
+  0%{ bottom:-80px; opacity:0 } 
+  50%{ bottom:-40; opacity:0.2 }
+  75%{ bottom:-20; opacity:0.5 }
   100%{ bottom:0; opacity:1 }
 }
 
@@ -69,10 +71,15 @@ h1:before {
 
 
 <div style="display:none;" id="myDiv" class="animate-bottom">
-	<video width="640" height="480" controls style="position: relative; right: 0; bottom: 0; min-width: 100%; min-height: 100%;">
-		<source src="video.mp4" type="video/mp4">
-  		<source src="video.ogg" type="video/ogg">
-	</video>
+  <div>
+    <h2 style="color: black; background-color: white">SANDISHYA 2K18</h2>
+  </div>
+  <div>
+    <video width="640em" height="480em" controls style="position: relative; right: 0; bottom: 0; min-width: 100%; min-height: 100%;">
+    <source src="video.mp4" type="video/mp4">
+      <source src="video.ogg" type="video/ogg">
+  </video>  
+  </div>
 </div>
 
 <script>

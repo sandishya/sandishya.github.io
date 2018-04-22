@@ -28,7 +28,7 @@ h1:before {
 	overflow: hidden;
 	max-width: 15em;
 	color: white;
-	animation: loading 5s linear;
+	animation: loading 4s linear;
 }
 
 
@@ -36,9 +36,9 @@ h1:before {
 .animate-bottom {
   position: relative;
   -webkit-animation-name: animatebottom;
-  -webkit-animation-duration: 2s;
+  -webkit-animation-duration: 1.5s;
   animation-name: animatebottom;
-  animation-duration: 2s;
+  animation-duration: 1.5s;
   animation-timing-function:ease-in-out;
 
 }
@@ -54,14 +54,6 @@ h1:before {
   50%{ bottom:-100; opacity:0.5 }
   100%{ bottom:0; opacity:1 }
 }
-
-
-/*
-   0%   {top: 0px;}
-    25%  {top: 200px;}
-    75%  {top: 50px}
-    100% {top: 100px;}
-*/
 
 
 #myDiv {
@@ -87,7 +79,7 @@ h1:before {
 var myVar;
 
 function myFunction() {
-    myVar = setTimeout(showPage, 3500);
+    myVar = setTimeout(showPage, 2500);
 }
 
 function showPage() {

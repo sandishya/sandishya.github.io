@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+body {
+	background: limegreen;
+	min-height: 100%;
+}
+
+h1 {
+	position: fixed;
+	text-align: center;
+	left: 50%;
+	margin-left: -5em;
+	color: hsla(0,0%,100%,.3);
+	font: 900 200% Baskerville, 'Palatino Linotype', Palatino, serif;	
+}
+
+@keyframes loading {
+	from { max-width: 0; }
+}
+
+h1:before {
+	content: attr(data-content);
+	position: fixed;
+	overflow: hidden;
+	max-width: 15em;
+	color: white;
+	animation: loading 5s linear;
+}
+
+
+
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 2s;
+  animation-name: animatebottom;
+  animation-duration: 2s;
+  animation-timing-function:ease-in-out;
+
+}
+
+@-webkit-keyframes animatebottom {
+  0%{ bottom:-150px; opacity:0 } 
+  50%{ bottom:-100; opacity:0.5 }
+  100%{ bottom:0; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  0%{ bottom:-150px; opacity:0 } 
+  50%{ bottom:-100; opacity:0.5 }
+  100%{ bottom:0; opacity:1 }
+}
+
+
+/*
+   0%   {top: 0px;}
+    25%  {top: 200px;}
+    75%  {top: 50px}
+    100% {top: 100px;}
+*/
+
+
+#myDiv {
+  display: none;
+  text-align: center;
+}
+</style>
+</head>
+<body onload="myFunction()" style="margin:0;">
+
+
+<h1 id="loader" data-content="SANDISHYA_2K18">SANDISHYA_2K18</h1>
+
+
+<div style="display:none;" id="myDiv" class="animate-bottom">
+	<video width="640" height="480" controls style="position: relative; right: 0; bottom: 0; min-width: 100%; min-height: 100%;">
+		<source src="video.mp4" type="video/mp4">
+  		<source src="video.ogg" type="video/ogg">
+	</video>
+</div>
+
+<script>
+var myVar;
+
+function myFunction() {
+    myVar = setTimeout(showPage, 3500);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
+
+</body>
+</html>
